@@ -1,0 +1,281 @@
+[
+  {
+    "name": "Cafe Arfa",
+    "description": "Discover the art of frontend web development at Cafe Arfa. Immerse yourself in mastering HTML, CSS, and front-end JavaScript, alongside tools like Git, VSCode, and the delightful Vue framework.",
+    "location": {
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India"
+    },
+    "tables": [
+      {
+        "type": "Regular",
+        "price": 100,
+        "seats": 4,
+        "count": 0
+      },
+      {
+        "type": "VIP",
+        "price": 150,
+        "seats": 6,
+        "count": 0
+      },
+      {
+        "type": "Outdoor",
+        "price": 120,
+        "seats": 2,
+        "count": 0
+      }
+    ],
+    "totalTables": 40,
+    "bookingStatus": true
+  },
+  {
+    "name": "Food Haven",
+    "description": "Food Haven is a gastronomic retreat nestled in the heart of the city. Indulge in a diverse menu that combines global flavors with local ingredients. Our chefs craft each dish with precision, ensuring a delightful culinary journey for every palate",
+    "location": {
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India"
+    },
+    "tables": [
+      {
+        "type": "Regular",
+        "price": 90,
+        "seats": 4,
+        "count": 0
+      },
+      {
+        "type": "Family",
+        "price": 120,
+        "seats": 8,
+        "count": 0
+      },
+      {
+        "type": "Private",
+        "price": 200,
+        "seats": 10,
+        "count": 0
+      }
+    ],
+    "totalTables": 30,
+    "bookingStatus": false
+  },
+  {
+    "name": "Urban Spice Fusion",
+    "description": " At Urban Spice Fusion, experience the perfect blend of spices and innovation. Our menu showcases a fusion of international cuisines with a touch of urban flair. Immerse yourself in the vibrant atmosphere and savor dishes that dance on your taste buds.",
+    "location": {
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India"
+    },
+    "tables": [
+      {
+        "type": "Corner",
+        "price": 110,
+        "seats": 5,
+        "count": 0
+      },
+      {
+        "type": "Group",
+        "price": 140,
+        "seats": 8,
+        "count": 0
+      },
+      {
+        "type": "Window",
+        "price": 120,
+        "seats": 4,
+        "count": 0
+      }
+    ],
+    "totalTables": 25,
+    "bookingStatus": true
+  },
+  {
+    "name": "Mango Grove Bistro",
+    "description": "Step into the Mango Grove Bistro, where the aroma of ripe mangoes mingles with the rich spices of Indian cuisine. From savory curries to tangy chutneys, our menu celebrates the diverse and exquisite flavors of the subcontinent.",
+    "location": {
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India"
+    },
+    "tables": [
+      {
+        "type": "Traditional",
+        "price": 95,
+        "seats": 4,
+        "count": 0
+      },
+      {
+        "type": "Banquet",
+        "price": 130,
+        "seats": 6,
+        "count": 0
+      },
+      {
+        "type": "Lounge",
+        "price": 180,
+        "seats": 10,
+        "count": 0
+      }
+    ],
+    "totalTables": 35,
+    "bookingStatus": true
+  },
+  {
+    "name": "Skyline Sushi Lounge",
+    "description": "Elevate your dining experience at Skyline Sushi Lounge, where artistry meets authenticity. Our skilled sushi chefs create edible masterpieces, blending traditional Japanese techniques with modern twists. Enjoy panoramic views and a culinary journey through the flavors of the East",
+    "location": {
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "country": "India"
+    },
+    "tables": [
+      {
+        "type": "Regular",
+        "price": 100,
+        "seats": 4,
+        "count": 0
+      },
+      {
+        "type": "VIP",
+        "price": 150,
+        "seats": 6,
+        "count": 0
+      },
+      {
+        "type": "Outdoor",
+        "price": 120,
+        "seats": 2,
+        "count": 0
+      }
+    ],
+    "totalTables": 20,
+    "bookingStatus": false
+  },
+  {
+    "name": "Biryani Bliss Lounge",
+    "description": "Discover the bliss of biryani at Biryani Bliss Lounge. Our culinary artisans craft aromatic biryanis with a symphony of flavors, taking you on a gastronomic journey through the diverse regions of India.",
+    "location": {
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India"
+    },
+    "tables": [
+      {
+        "type": "Regular",
+        "price": 90,
+        "seats": 4,
+        "count": 0
+      },
+      {
+        "type": "Family",
+        "price": 120,
+        "seats": 8,
+        "count": 0
+      },
+      {
+        "type": "Private",
+        "price": 200,
+        "seats": 10,
+        "count": 0
+      }
+    ],
+    "totalTables": 22,
+    "bookingStatus": true
+  },
+  {
+    "name": "CurryCraft Hub",
+    "description": "Savor the art of curry at CurryCraft Hub, a culinary haven where every dish tells a story of spice and flavor. Experience the diverse tastes of Indian curries, each made with precision and passion.",
+    "location": {
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "country": "India"
+    },
+    "tables": [
+      {
+        "type": "Corner",
+        "price": 110,
+        "seats": 5,
+        "count": 0
+      },
+      {
+        "type": "Group",
+        "price": 140,
+        "seats": 8,
+        "count": 0
+      },
+      {
+        "type": "Window",
+        "price": 120,
+        "seats": 4,
+        "count": 0
+      }
+    ],
+    "totalTables": 18,
+    "bookingStatus": false
+  },
+  {
+    "name": "Tandoori Delights Kitchen",
+    "description": "Embark on a culinary journey to the heart of India at Tandoori Delights Kitchen. Our chefs craft mouthwatering dishes in traditional tandoori ovens, delivering an authentic taste of Indian cuisine.",
+    "location": {
+      "city": "New Delhi",
+      "state": "Delhi",
+      "country": "India"
+    },
+    "tables": [
+      {
+        "type": "Traditional",
+        "price": 95,
+        "seats": 4,
+        "count": 0
+      },
+      {
+        "type": "Banquet",
+        "price": 130,
+        "seats": 6,
+        "count": 0
+      },
+      {
+        "type": "Lounge",
+        "price": 180,
+        "seats": 10,
+        "count": 0
+      }
+    ],
+    "totalTables": 30,
+    "bookingStatus": true
+  },
+  {
+    "name": "Spice Haven Bistro",
+    "description": "Immerse yourself in a symphony of spices at Spice Haven Bistro. Indulge in the rich flavors of Indian cuisine, where aromatic spices and culinary craftsmanship create an enchanting dining experience.",
+    "location": {
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India"
+    },
+    "tables": [
+      {
+        "type": "Regular",
+        "price": 100,
+        "seats": 4,
+        "count": 0
+      },
+      {
+        "type": "VIP",
+        "price": 150,
+        "seats": 6,
+        "count": 0
+      },
+      {
+        "type": "Outdoor",
+        "price": 120,
+        "seats": 2,
+        "count": 0
+      }
+    ],
+    "totalTables": 25,
+    "bookingStatus": true
+  }
+]
