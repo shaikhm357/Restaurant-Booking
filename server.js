@@ -1,5 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const morgan = require("morgan");
 const connectDB = require("./config/db");
 const app = express();
 
@@ -11,6 +12,9 @@ connectDB();
 
 //middlewares
 app.use(express.json());
+if (process.env.NODE_ENV === "development") {
+  app.use(morgan("dev"));
+}
 
 // routes
 const users = require("./routes/users");
