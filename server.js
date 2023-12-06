@@ -17,14 +17,16 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // routes
-const users = require("./routes/users");
+const user = require("./routes/users");
+const restaurant = require("./routes/restaurants");
 
 //first route
 app.get("/", (req, res) => {
   res.send("hello world");
 });
 
-app.use("/api/v1/user", users);
+app.use("/api/v1/user", user);
+app.use("/api/v1/restaurant", restaurant);
 
 // set port no.
 const PORT = process.env.PORT || 6000;
