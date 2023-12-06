@@ -1,5 +1,8 @@
 const User = require("../models/User");
 
+// @desc   Create user
+// @route  POST /api/v1/user
+// @access Public
 const createUser = async (req, res) => {
   try {
     const user = await User.create(req.body);
