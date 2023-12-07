@@ -39,10 +39,12 @@ exports.getRestaurantsByCity = async (req, res, next) => {
 exports.getRestaurantsById = async (req, res) => {
   try {
     const restaurant = await Restaurants.findById(req.params.id);
+    if (!restaurant) {
+      return res.status(400).json({ msg: "data not found" });
+    }
     res.status(201).json({ success: true, data: restaurant });
   } catch (err) {
     console.log(err);
     res.status(500).json({ success: false, error: err });
   }
 };
-

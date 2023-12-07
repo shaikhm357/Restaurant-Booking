@@ -26,7 +26,19 @@ const BookingSchema = new mongoose.Schema({
   }
 });
 
-BookingSchema.post("save", async function (doc) {
+BookingSchema.pre("save", async function (next) {
+  try {
+    const restaurant = await Restaurant.findById(this.restaurantId);
+    if (!restaurant) {
+      return next(new Error("Resource not found"))
+    }
+    next();
+  } catch (err) {
+    next(err);
+  }
+});
+
+BookingSchema.post("save", async function (doc, next) {
   const { tableType, restaurantId } = doc;
   try {
     const body = {};
@@ -54,8 +66,10 @@ BookingSchema.post("save", async function (doc) {
       lean: true
     });
     // console.log("restaurant ----------->", body.totalTables, totalBooked);
+    next();
   } catch (err) {
     console.log(err);
+    next(err);
   }
 });
 
