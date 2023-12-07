@@ -19,9 +19,14 @@ exports.createRestaurant = async (req, res, next) => {
 exports.getRestaurantsByCity = async (req, res, next) => {
   try {
     const restaurant = await Restaurants.find({
-      "location.city": { $regex: req.query.city, $options: "i" },
+      $and: [
+        { "location.city": { $regex: req.query.city, $options: "i" } },
+        { bookingStatus: true }
+      ]
     });
-    res.status(201).json({ count : restaurant.length ,success: true, data: restaurant });
+    res
+      .status(201)
+      .json({ count: restaurant.length, success: true, data: restaurant });
   } catch (err) {
     console.log(err);
     res.status(500).json({ success: false, error: err });
@@ -33,10 +38,11 @@ exports.getRestaurantsByCity = async (req, res, next) => {
 // @access Public
 exports.getRestaurantsById = async (req, res) => {
   try {
-    const restaurant = await Restaurants.findById(req.params.id)
+    const restaurant = await Restaurants.findById(req.params.id);
     res.status(201).json({ success: true, data: restaurant });
   } catch (err) {
     console.log(err);
     res.status(500).json({ success: false, error: err });
   }
 };
+
