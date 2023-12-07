@@ -45,11 +45,10 @@ const RestaurantSchema = mongoose.Schema({
   ],
   totalTables: {
     type: Number,
-    required: true,
   },
   bookingStatus: {
     type: Boolean,
-    default: true,
+    default: false,
   },
 });
 

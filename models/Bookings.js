@@ -46,11 +46,10 @@ BookingSchema.post("save", async function (doc, next) {
     await Restaurant.updateOne(
       {
         _id: new mongoose.Types.ObjectId(restaurantId),
-        "tables.type": tableType
+        "tables.type": tableType,
       },
       { $inc: { "tables.$.booked": 1, "tables.$.available": -1 } }
     );
-
     body.totalTables = restaurant.tables.reduce(
       (acc, curr) => acc + (curr.available + curr.booked),
       0
@@ -59,13 +58,12 @@ BookingSchema.post("save", async function (doc, next) {
       (acc, curr) => acc + curr.booked,
       0
     );
-    body.bookingStatus = totalBooked === body.totalTables ? false : true;
+    body.bookingStatus = totalBooked-1 === body.totalTables ? false : true;
 
     await Restaurant.findByIdAndUpdate(restaurantId, body, {
       new: true,
       lean: true
     });
-    // console.log("restaurant ----------->", body.totalTables, totalBooked);
     next();
   } catch (err) {
     console.log(err);
