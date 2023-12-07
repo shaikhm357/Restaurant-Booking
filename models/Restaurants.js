@@ -33,11 +33,11 @@ const RestaurantSchema = mongoose.Schema({
         type: Number,
         required: true,
       },
-      seats: {
+      available: {
         type: Number,
         required: true,
       },
-      count: {
+      booked: {
         type: Number,
         default: 0,
       },

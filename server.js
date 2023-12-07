@@ -19,6 +19,7 @@ if (process.env.NODE_ENV === "development") {
 // routes
 const user = require("./routes/users");
 const restaurant = require("./routes/restaurants");
+const booking = require("./routes/bookings");
 
 //first route
 app.get("/", (req, res) => {
@@ -27,6 +28,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/v1/user", user);
 app.use("/api/v1/restaurant", restaurant);
+app.use("/api/v1/booking", booking);
 
 // set port no.
 const PORT = process.env.PORT || 6000;

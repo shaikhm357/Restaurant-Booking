@@ -1,6 +1,6 @@
 [
   {
-    "whoBooked": "brad",
+    "bookedBy": "brad",
     "restaurant": "blah",
     "tables": [
       { "type": "blah", "price": 40, "count": 2 },

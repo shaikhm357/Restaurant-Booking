@@ -6,8 +6,8 @@ const {
   getRestaurantsById,
 } = require("../controllers/restaurants");
 
-router.route("/byId/:id").get(getRestaurantsById);
-router.route("/:city").get(getRestaurantsByCity);
+router.route("/:id").get(getRestaurantsById);
+router.route("/").get(getRestaurantsByCity);
 router.route("/").post(createRestaurant);
 
 module.exports = router;
