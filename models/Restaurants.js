@@ -48,7 +48,7 @@ const RestaurantSchema = mongoose.Schema({
   },
   bookingStatus: {
     type: Boolean,
-    default: false,
+    default: true,
   },
 });
 

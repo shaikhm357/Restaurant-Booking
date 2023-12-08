@@ -1,0 +1,379 @@
+{
+	"info": {
+		"_postman_id": "80bc67b9-b8d9-4114-8b9f-d4c58c7700ea",
+		"name": "Restaurant apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14811809",
+		"_collection_link": "https://www.postman.com/spaceflight-participant-62607232/workspace/restaurant-bookin/collection/14811809-80bc67b9-b8d9-4114-8b9f-d4c58c7700ea?action=share&source=collection_link&creator=14811809"
+	},
+	"item": [
+		{
+			"name": "restaurant",
+			"item": [
+				{
+					"name": "create restaurant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"65712d8060cd28f6b1637e4e\",\n    \"name\": \"Spice Haven Bistro\",\n    \"description\": \"Immerse yourself in a symphony of spices at Spice Haven Bistro. Indulge in the rich flavors of Indian cuisine, where aromatic spices and culinary craftsmanship create an enchanting dining experience.\",\n    \"location\": {\n      \"city\": \"Mumbai\",\n      \"state\": \"Maharashtra\",\n      \"country\": \"India\"\n    },\n    \"tables\": [\n      {\n        \"type\": \"Regular\",\n        \"price\": 100,\n        \"available\": 0,\n        \"booked\": 5,\n        \"_id\": \"65712d8060cd28f6b1637e4f\"\n      },\n      {\n        \"type\": \"VIP\",\n        \"price\": 150,\n        \"available\": 2,\n        \"booked\": 2,\n        \"_id\": \"65712d8060cd28f6b1637e50\"\n      },\n      {\n        \"type\": \"Outdoor\",\n        \"price\": 120,\n        \"available\": 1,\n        \"booked\": 0,\n        \"_id\": \"65712d8060cd28f6b1637e51\"\n      }\n    ]\n  \n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/restaurant",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"restaurant"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create restaurant /restaurant",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"_id\": \"65712d8060cd28f6b1637e4e\",\n    \"name\": \"Spice Haven Bistro\",\n    \"description\": \"Immerse yourself in a symphony of spices at Spice Haven Bistro. Indulge in the rich flavors of Indian cuisine, where aromatic spices and culinary craftsmanship create an enchanting dining experience.\",\n    \"location\": {\n      \"city\": \"Mumbai\",\n      \"state\": \"Maharashtra\",\n      \"country\": \"India\"\n    },\n    \"tables\": [\n      {\n        \"type\": \"Regular\",\n        \"price\": 100,\n        \"available\": 0,\n        \"booked\": 5,\n        \"_id\": \"65712d8060cd28f6b1637e4f\"\n      },\n      {\n        \"type\": \"VIP\",\n        \"price\": 150,\n        \"available\": 2,\n        \"booked\": 2,\n        \"_id\": \"65712d8060cd28f6b1637e50\"\n      },\n      {\n        \"type\": \"Outdoor\",\n        \"price\": 120,\n        \"available\": 1,\n        \"booked\": 0,\n        \"_id\": \"65712d8060cd28f6b1637e51\"\n      }\n    ]\n  \n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/restaurant",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"restaurant"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "675"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a3-2nLBjkdrbzBqMPb8Tolradl4Moc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Dec 2023 19:08:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"name\": \"Spice Haven Bistro\",\n        \"description\": \"Immerse yourself in a symphony of spices at Spice Haven Bistro. Indulge in the rich flavors of Indian cuisine, where aromatic spices and culinary craftsmanship create an enchanting dining experience.\",\n        \"location\": {\n            \"city\": \"Mumbai\",\n            \"state\": \"Maharashtra\",\n            \"country\": \"India\"\n        },\n        \"tables\": [\n            {\n                \"type\": \"Regular\",\n                \"price\": 100,\n                \"available\": 0,\n                \"booked\": 5,\n                \"_id\": \"65712d8060cd28f6b1637e4f\"\n            },\n            {\n                \"type\": \"VIP\",\n                \"price\": 150,\n                \"available\": 2,\n                \"booked\": 2,\n                \"_id\": \"65712d8060cd28f6b1637e50\"\n            },\n            {\n                \"type\": \"Outdoor\",\n                \"price\": 120,\n                \"available\": 1,\n                \"booked\": 0,\n                \"_id\": \"65712d8060cd28f6b1637e51\"\n            }\n        ],\n        \"bookingStatus\": false,\n        \"_id\": \"65712d8060cd28f6b1637e4e\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get restaurant by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/restaurant/65712d8060cd28f6b1637e4e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"restaurant",
+								"65712d8060cd28f6b1637e4e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get restaurant by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/restaurant/65712d8060cd28f6b1637e4e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"65712d8060cd28f6b1637e4e"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "691"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b3-sckDV/4NS3dfX+nA47dtkNHc7I8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Dec 2023 19:12:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"location\": {\n            \"city\": \"Mumbai\",\n            \"state\": \"Maharashtra\",\n            \"country\": \"India\"\n        },\n        \"_id\": \"65712d8060cd28f6b1637e4e\",\n        \"name\": \"Spice Haven Bistro\",\n        \"description\": \"Immerse yourself in a symphony of spices at Spice Haven Bistro. Indulge in the rich flavors of Indian cuisine, where aromatic spices and culinary craftsmanship create an enchanting dining experience.\",\n        \"tables\": [\n            {\n                \"type\": \"Regular\",\n                \"price\": 100,\n                \"available\": 0,\n                \"booked\": 5,\n                \"_id\": \"65712d8060cd28f6b1637e4f\"\n            },\n            {\n                \"type\": \"VIP\",\n                \"price\": 150,\n                \"available\": 0,\n                \"booked\": 4,\n                \"_id\": \"65712d8060cd28f6b1637e50\"\n            },\n            {\n                \"type\": \"Outdoor\",\n                \"price\": 120,\n                \"available\": 0,\n                \"booked\": 1,\n                \"_id\": \"65712d8060cd28f6b1637e51\"\n            }\n        ],\n        \"bookingStatus\": true,\n        \"__v\": 0,\n        \"totalTables\": 10\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get restaurants by city",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/restaurant?city=jaipur",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"restaurant"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "jaipur"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get restaurants by city",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/restaurant?city=jaipur",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"restaurant"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "jaipur"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "790"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"316-qX38DX9MM3KQ3DgeKZB07hUSa6Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Dec 2023 18:25:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 1,\n    \"success\": true,\n    \"data\": [\n        {\n            \"location\": {\n                \"city\": \"Jaipur\",\n                \"state\": \"Rajasthan\",\n                \"country\": \"India\"\n            },\n            \"_id\": \"65712d8060cd28f6b1637e3e\",\n            \"name\": \"Skyline Sushi Lounge\",\n            \"description\": \"Elevate your dining experience at Skyline Sushi Lounge, where artistry meets authenticity. Our skilled sushi chefs create edible masterpieces, blending traditional Japanese techniques with modern twists. Enjoy panoramic views and a culinary journey through the flavors of the East\",\n            \"tables\": [\n                {\n                    \"type\": \"Regular\",\n                    \"price\": 100,\n                    \"available\": 20,\n                    \"booked\": 10,\n                    \"_id\": \"65712d8060cd28f6b1637e3f\"\n                },\n                {\n                    \"type\": \"VIP\",\n                    \"price\": 150,\n                    \"available\": 20,\n                    \"booked\": 10,\n                    \"_id\": \"65712d8060cd28f6b1637e40\"\n                },\n                {\n                    \"type\": \"Outdoor\",\n                    \"price\": 120,\n                    \"available\": 20,\n                    \"booked\": 10,\n                    \"_id\": \"65712d8060cd28f6b1637e41\"\n                }\n            ],\n            \"totalTables\": 20,\n            \"bookingStatus\": true,\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "create booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bookedBy\": \"brad\",\n    \"restaurantId\": \"65712d8060cd28f6b1637e4e\",\n    \"tableType\": \"Outdoor\",\n    \"mobile\" : \"+917208168601\",\n    \"status\": \"active\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/booking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"booking"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create booking",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"bookedBy\": \"brad\",\n    \"restaurantId\": \"65712d8060cd28f6b1637e4e\",\n    \"tableType\": \"Outdoor\",\n    \"mobile\" : \"+917208168601\",\n    \"status\": \"active\"\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/booking",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"booking"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "191"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bf-0QM8rCepawlmCHtOQjDexWutOTw\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 07 Dec 2023 19:59:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"bookedBy\": \"brad\",\n        \"restaurantId\": \"65712d8060cd28f6b1637e4e\",\n        \"tableType\": \"Outdoor\",\n        \"mobile\": \"+917208168601\",\n        \"status\": \"active\",\n        \"_id\": \"65722404ac409a3db72e7df2\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

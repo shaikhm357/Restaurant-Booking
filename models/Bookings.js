@@ -42,29 +42,36 @@ BookingSchema.pre("save", async function (next) {
 BookingSchema.post("save", async function (doc, next) {
   const { tableType, restaurantId, mobile } = doc;
   try {
-    const body = {};
     const restaurant = await Restaurant.findById(restaurantId);
-    await Restaurant.updateOne(
-      {
-        _id: new mongoose.Types.ObjectId(restaurantId),
-        "tables.type": tableType
-      },
-      { $inc: { "tables.$.booked": 1, "tables.$.available": -1 } }
-    );
-    body.totalTables = restaurant.tables.reduce(
-      (acc, curr) => acc + (curr.available + curr.booked),
-      0
-    );
-    const totalBooked = restaurant.tables.reduce(
-      (acc, curr) => acc + curr.booked,
-      0
-    );
-    body.bookingStatus = totalBooked - 1 === body.totalTables ? false : true;
 
-    await Restaurant.findByIdAndUpdate(restaurantId, body, {
-      new: true,
-      lean: true
-    });
+    let totalTables = 0;
+    let bookedTables = 0;
+
+    for (const table of restaurant.tables) {
+      // Decrement available by 1 and increment booked by 1 for the specified table type
+      if (table.type === tableType) {
+        if (table.available === 0) {
+          throw new Error("Table not available");
+        }
+        table.booked += 1;
+        table.available -= 1;
+      }
+
+      // Update totalTables with the sum of available and booked for all tables
+      totalTables += table.available + table.booked;
+      bookedTables += table.booked;
+    }
+
+    // Update the document with the new values
+    restaurant.totalTables = totalTables;
+
+    if (bookedTables >= totalTables) {
+      restaurant.bookingStatus = false;
+    }
+
+    // Save the updated document
+    await restaurant.save();
+    // Send sms
     sms(`This is your booking_id ${this.id}`, mobile);
     next();
   } catch (err) {
