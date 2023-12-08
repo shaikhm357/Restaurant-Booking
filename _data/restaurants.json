@@ -30,9 +30,7 @@
         "booked": 10,
         "_id": "65712d8060cd28f6b1637e51"
       }
-    ],
-    "totalTables": 25,
-    "bookingStatus": true
+    ]
   
   },
   {
@@ -66,9 +64,7 @@
         "booked": 10,
         "_id": "65712d8060cd28f6b1637e4d"
       }
-    ],
-    "totalTables": 30,
-    "bookingStatus": true
+    ]
   },
   {
     "_id": "65712d8060cd28f6b1637e46",
@@ -101,9 +97,7 @@
         "booked": 10,
         "_id": "65712d8060cd28f6b1637e49"
       }
-    ],
-    "totalTables": 18,
-    "bookingStatus": false
+    ]
   },
   {
     "_id": "65712d8060cd28f6b1637e42",
@@ -136,9 +130,7 @@
         "booked": 10,
         "_id": "65712d8060cd28f6b1637e45"
       }
-    ],
-    "totalTables": 22,
-    "bookingStatus": true
+    ]
   },
   {
     "_id": "65712d8060cd28f6b1637e3e",
@@ -171,9 +163,7 @@
         "booked": 10,
         "_id": "65712d8060cd28f6b1637e41"
       }
-    ],
-    "totalTables": 20,
-    "bookingStatus": false
+    ]
   },
   {
     "_id": "65712d8060cd28f6b1637e3a",
@@ -206,9 +196,7 @@
         "booked": 10,
         "_id": "65712d8060cd28f6b1637e3d"
       }
-    ],
-    "totalTables": 35,
-    "bookingStatus": true
+    ]
   },
   {
     "_id": "65712d8060cd28f6b1637e36",
@@ -241,9 +229,7 @@
         "booked": 10,
         "_id": "65712d8060cd28f6b1637e39"
       }
-    ],
-    "totalTables": 25,
-    "bookingStatus": true
+    ]
   },
   {
     "_id": "65712d8060cd28f6b1637e32",
@@ -276,9 +262,7 @@
         "booked": 10,
         "_id": "65712d8060cd28f6b1637e35"
       }
-    ],
-    "totalTables": 30,
-    "bookingStatus": false
+    ]
   },
   {
     "_id": "65712d8060cd28f6b1637e2e",
@@ -311,8 +295,6 @@
         "booked": 10,
         "_id": "65712d8060cd28f6b1637e31"
       }
-    ],
-    "totalTables": 40,
-    "bookingStatus": true
+    ]
   }
 ]

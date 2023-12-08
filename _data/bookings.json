@@ -1,13 +1,7 @@
-[
-  {
-    "bookedBy": "brad",
-    "restaurant": "blah",
-    "tables": [
-      { "type": "blah", "price": 40, "count": 2 },
-      { "type": "blah", "price": 40, "count": 1 },
-      { "type": "blah", "price": 40, "count": 1 }
-    ],
-    "totalPrice": 0,
-    "status": "active"
-  }
-]
+{
+  "bookedBy": "brad",
+  "restaurantId": "65712d8060cd28f6b1637e4e",
+  "tableType": "Outdoor",
+  "mobile" : "+917208168601",
+  "status": "active"
+}
